@@ -26,6 +26,14 @@ body {
    LARGE LAYOUT: desktop/laptop
    Fixed content width: 1200px
    --------------------------------------------------------- */
+.large-label {
+    display: inline;
+}
+
+.medium-label,
+.small-label {
+    display: none;
+}
 
    .container {
     width: 1200px;
@@ -120,6 +128,13 @@ footer {
    --------------------------------------------------------- */
 @media screen and (max-width: 1199px) {
 
+    .large-label {
+        display: none;
+    }
+
+    .medium-label {
+        display: inline;
+    }
     .container {
         width: 720px;
     }
@@ -152,6 +167,14 @@ footer {
    Fixed content width: 360px
    --------------------------------------------------------- */
 @media screen and (max-width: 767px) {
+
+.medium-label {
+        display: none;
+    }
+
+    .small-label {
+        display: inline;
+    }
 
     .container {
         width: 360px;
